@@ -2,6 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Check, ChevronRight } from 'lucide-react';
 import { Button } from './ui/Button';
+import { formatCurrency } from '../utils/formatCurrency';
+
+interface ValueStackProps {
+  suggestedPrice: number;
+}
 
 const valueItems = [
   { name: 'Workflow Architecture Audit', value: '$1,500' },
@@ -25,7 +30,7 @@ const itemVariants = {
   visible: { opacity: 1, x: 0, transition: { duration: 0.4 } },
 };
 
-export const ValueStack: React.FC = () => {
+export const ValueStack: React.FC<ValueStackProps> = ({ suggestedPrice }) => {
   return (
     <section className="py-24 relative z-10 border-t border-dashed border-zinc-800 bg-black/50">
       <div className="max-w-3xl mx-auto px-6">
@@ -76,11 +81,13 @@ export const ValueStack: React.FC = () => {
             </div>
             <div>
               <span className="text-sm text-zinc-500 uppercase tracking-wider">Your Investment</span>
-              <p className="text-5xl md:text-6xl font-bold text-white mt-1">$5,800</p>
+              <p className="text-5xl md:text-6xl font-bold text-white mt-1">{formatCurrency(suggestedPrice)}</p>
             </div>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-sm font-medium">
-              You save $4,700
-            </div>
+            {10500 - suggestedPrice > 0 && (
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-sm font-medium">
+                You save {formatCurrency(10500 - suggestedPrice)}
+              </div>
+            )}
           </motion.div>
 
           {/* CTA */}

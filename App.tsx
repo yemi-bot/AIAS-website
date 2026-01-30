@@ -5,7 +5,9 @@ import { Hero } from './components/Hero';
 import { Features } from './components/Features';
 import { SocialProof } from './components/SocialProof';
 import { CaseStudy } from './components/CaseStudy';
+import { ROICalculator } from './components/ROICalculator';
 import { Process } from './components/Process';
+import { ValueStack } from './components/ValueStack';
 import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
 
@@ -18,9 +20,11 @@ function App() {
       <main className="flex flex-col relative">
         <Hero />
         <SocialProof />
+        <ROICalculator />
         <Features />
         <CaseStudy />
         <Process />
+        <ValueStack />
         <CTA />
       </main>
 

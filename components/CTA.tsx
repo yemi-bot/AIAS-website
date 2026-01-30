@@ -14,29 +14,29 @@ export const CTA: React.FC = () => {
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-8">
            <CheckCircle2 size={16} />
-           <span>Risk Reversal Guarantee</span>
+           <span>Efficiency Guarantee</span>
         </div>
         
         <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
-          We Build Your First <br/>
-          <span className="text-white">Automation for Free.</span>
+          Zero Risk. <br/>
+          <span className="text-white">Guaranteed Results.</span>
         </h2>
         
         <p className="text-xl text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-          We’ll build your highest-impact Proof of Concept (PoC) with zero money down. If you don't see the immediate ROI and time saved, you don't pay.
+          If we don't automate at least 70% of the target workflow, we work for free until we do. No fine print. No time limits. We deliver or we don't get paid.
         </p>
         
         <div className="flex flex-col items-center gap-6">
           <a href="https://calendly.com/aiautomatebiz" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
             <Button variant="primary" className="w-full sm:w-auto text-base py-4 px-10 h-auto">
-              Claim Your Free Proof-of-Concept
+              Book Your Automation Audit
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </a>
           
           <p className="text-sm text-zinc-500 flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
-            Schedule a 15-minute "Efficiency Audit" to see how many hours we can buy back.
+            15-minute call. No commitment. See exactly what we'd automate first.
           </p>
         </div>
       </div>

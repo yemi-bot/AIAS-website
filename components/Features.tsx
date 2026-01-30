@@ -33,7 +33,7 @@ export const Features: React.FC = () => {
             <span className="text-zinc-500">We architect a custom Shadow Backend.</span>
           </h3>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto">
-             Our target is a minimum <span className="text-white font-semibold">75% reduction in manual operational time</span> within your first 30 days of deployment.
+             Our target is a minimum <span className="text-white font-semibold">75% reduction in Human Latency</span> within your first 30 days of deployment.
           </p>
         </div>
 

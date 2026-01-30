@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from './ui/Button';
-import { ChevronRight, ArrowUpRight, Zap } from 'lucide-react';
+import { ChevronRight, Play, Zap } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300 mb-8 hover:border-zinc-700 transition-colors cursor-default"
       >
         <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse"></span>
-        Accepting New Clients for Q3
+        The Payroll-Zero Revenue Engine
       </motion.div>
 
       {/* Hook - Main Headline */}
@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-10 leading-relaxed"
       >
-        Most businesses are held back by "Admin Drag"—manual tasks that eat 80% of your team's potential. We build high-performance automation engines that reclaim those hours, allowing you to grow without the hiring headache.
+        We build custom AI automation engines that replace manual human workflows. Reclaim 40+ hours a week and eliminate 'Human Latency' in 14 days.
       </motion.p>
 
       {/* CTA Buttons */}
@@ -47,13 +47,17 @@ export const Hero: React.FC = () => {
       >
         <a href="https://calendly.com/aiautomatebiz" target="_blank" rel="noopener noreferrer">
           <Button variant="primary" className="group">
-            Claim Your Free PoC
+            Book Your Automation Audit
             <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
         </a>
-        <Button variant="secondary">
-          View Case Studies
-        </Button>
+        <a href="#roi-calculator">
+          <Button variant="secondary" className="group">
+            <Play className="w-4 h-4 mr-2" />
+            Watch How It Works
+            <span className="ml-2 text-xs text-zinc-500">(10-Min VSL)</span>
+          </Button>
+        </a>
       </motion.div>
 
       {/* Visual Tech Representation (Abstract Dashboard Mockup) */}

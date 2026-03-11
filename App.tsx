@@ -5,6 +5,7 @@ import { Hero } from './components/Hero';
 import { Features } from './components/Features';
 import { SocialProof } from './components/SocialProof';
 import { CaseStudy } from './components/CaseStudy';
+import { Testimonials } from './components/Testimonials';
 import { ROICalculator } from './components/ROICalculator';
 import { Process } from './components/Process';
 import { ValueStack } from './components/ValueStack';
@@ -61,6 +62,7 @@ function App() {
         />
         <Features />
         <CaseStudy />
+        <Testimonials />
         <Process />
         <ValueStack suggestedPrice={suggestedPrice} />
         <CTA />

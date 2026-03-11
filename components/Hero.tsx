@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-10 leading-relaxed"
       >
-        We build custom AI automation engines that replace manual human workflows. Reclaim 40+ hours a week and eliminate 'Human Latency' in 14 days.
+        We build custom AI automation engines that replace manual human workflows. Reclaim 34+ hours a week and eliminate 'Human Latency' in 14 days.
       </motion.p>
 
       {/* CTA Buttons */}

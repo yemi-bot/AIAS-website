@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Navbar } from './components/Navbar';
 import { BackgroundGrid } from './components/BackgroundGrid';
 import { Hero } from './components/Hero';
+import { VSL } from './components/VSL';
 import { Features } from './components/Features';
 import { SocialProof } from './components/SocialProof';
 import { CaseStudy } from './components/CaseStudy';
@@ -46,6 +47,7 @@ function App() {
 
       <main className="flex flex-col relative">
         <Hero />
+        <VSL />
         <SocialProof />
         <ROICalculator
           employees={employees}
